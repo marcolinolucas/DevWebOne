@@ -5,6 +5,10 @@ body {
 .roboto-regular {
 	font-weight: 400;
 }
+.roboto-medium-white {
+	font-weight: 500;
+	color: white;
+}
 .roboto-bold {
 	font-weight: 700;
 }
