@@ -1,5 +1,16 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.roboto-regular {
+	font-weight: 400;
+}
+.roboto-bold {
+	font-weight: 700;
+}
+
 .footer {
 	bottom: 0;
-	color: white;
+	color: white !important;
 	text-align: center;
 }
