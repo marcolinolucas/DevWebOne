@@ -67,7 +67,7 @@
 				<h1 class="text-center pb-4">Cursos</h1>
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="courseInputName">Nome</label>
+						<label for="courseInputName">* Nome</label>
 						<input type="text" class="form-control" id="courseInputName"
 							placeholder="Curso de JavaScript" required
 							pattern=".{3,50}">
@@ -129,7 +129,7 @@
 				<h1 class="text-center pb-4">Instrutores</h1>
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="instructorsInputName">Nome</label>
+						<label for="instructorsInputName">* Nome</label>
 						<input type="text" class="form-control" id="instructorsInputName"
 							placeholder="Curso de JavaScript..." required
 							pattern=".{3,50}">
@@ -141,7 +141,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="instructorsInputEmail">Email</label>
+						<label for="instructorsInputEmail">* Email</label>
 						<input type="email" class="form-control" id="instructorsInputEmail"
 							placeholder="professor@js.com.br" required
 							pattern=".{3,50}">
@@ -164,7 +164,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="instructorsInputLogin">Login</label>
+						<label for="instructorsInputLogin">* Login</label>
 						<input type="text" class="form-control" id="instructorsInputLogin"
 							placeholder="Trakston" required
 							pattern=".{3,20}">
@@ -176,9 +176,9 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="instructorsInputPassword">Senha</label>
-						<input type="text" class="form-control" id="instructorsInputPassword"
-							placeholder="B@t@tinha123" required
+						<label for="instructorsInputPassword">* Senha</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="B@t@tinha1231"
+						  required
 							pattern=".{3,255}">
 						<div class="valid-feedback">
 							Muito bem!
@@ -194,7 +194,7 @@
 				<h1 class="text-center pb-4">Matrículas</h1>
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="registerClassInputID">ID da Turma</label>
+						<label for="registerClassInputID">* ID da Turma</label>
 						<input type="number" class="form-control" id="registerClassInputID"
 							placeholder="123..." required 
 							min="1000000000" max="9999999999">
@@ -206,7 +206,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="registerStudentInputID">ID do Aluno</label>
+						<label for="registerStudentInputID">* ID do Aluno</label>
 						<input type="number" class="form-control" id="registerStudentInputID"
 							placeholder="123..." required 
 							min="10000000000" max="99999999999">
@@ -245,7 +245,7 @@
 				<h1 class="text-center pb-4">Turmas</h1>
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="classInstructorInputID">ID do Instrutor</label>
+						<label for="classInstructorInputID">* ID do Instrutor</label>
 						<input type="number" class="form-control" id="classInstructorInputID"
 							placeholder="123..." required 
 							min="10000000000" max="99999999999">
@@ -257,7 +257,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="classCourseInputID">ID do Curso</label>
+						<label for="classCourseInputID">* ID do Curso</label>
 						<input type="number" class="form-control" id="classCourseInputID"
 							placeholder="123..." required 
 							min="1000000000" max="9999999999">
@@ -306,7 +306,7 @@
 				<h1 class="text-center pb-4">Administrador</h1>
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="adminInputName">Nome</label>
+						<label for="adminInputName">* Nome</label>
 						<input type="text" class="form-control" id="adminInputName"
 							placeholder="adminMaster" required
 							pattern=".{3,50}">
@@ -318,7 +318,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="adminInputLogin">Login</label>
+						<label for="adminInputLogin">* Login</label>
 						<input type="text" class="form-control" id="adminInputLogin"
 							placeholder="admin" required
 							pattern=".{3,50}">
@@ -330,9 +330,9 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="adminInputPassword">Senha</label>
-						<input type="text" class="form-control" id="adminInputPassword"
-							placeholder="admin123" required
+						<label for="adminInputPassword">* Senha</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="B@t@tinha1231"
+						  required
 							pattern=".{3,255}">
 						<div class="valid-feedback">
 							Muito bem!
@@ -348,7 +348,7 @@
 				<h1 class="text-center pb-4">Alunos</h1>
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="studentInputCPF">CPF</label>
+						<label for="studentInputCPF">* CPF</label>
 						<input type="text" class="form-control" id="studentInputCPF"
 							placeholder="000.000.000-00" required
 							pattern=".{14}">
@@ -360,7 +360,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="studentInputName">Nome</label>
+						<label for="studentInputName">* Nome</label>
 						<input type="text" class="form-control" id="studentInputName"
 							placeholder="fulano" required
 							pattern=".{3,50}">
@@ -372,7 +372,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="studentInputEmail">Email</label>
+						<label for="studentInputEmail">* Email</label>
 						<input type="email" class="form-control" id="studentInputEmail"
 							placeholder="fulano@gmail.com.br" required
 							pattern=".{3,50}">
@@ -384,7 +384,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="studentInputPhone">Telefone</label>
+						<label for="studentInputPhone">* Telefone</label>
 						<input type="text" class="form-control" id="studentInputPhone"
 							placeholder="+5521900000000" required
 							pattern=".{14}">
@@ -396,7 +396,7 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="studentInputLogin">Login</label>
+						<label for="studentInputLogin">* Login</label>
 						<input type="text" class="form-control" id="studentInputLogin"
 							placeholder="fulaninho" required
 							pattern=".{3,50}">
@@ -408,9 +408,9 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<label for="studentInputPassword">Senha</label>
-						<input type="text" class="form-control" id="studentInputPassword"
-							placeholder="Fulaninho123" required
+						<label for="studentInputPassword">* Senha</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="B@t@tinha1231"
+						  required
 							pattern=".{3,255}">
 						<div class="valid-feedback">
 							Muito bem!
