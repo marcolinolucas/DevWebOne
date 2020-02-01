@@ -9,20 +9,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="src/images/favicon.ico">
-
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/logo/favicon.ico">
+	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/about.css">
 
 	<title>Cursos Lero Lero</title>
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="../index.html">Lero Lero</a>
+			<a class="navbar-brand" href="../../index.html">Lero Lero</a>
 			<button class="navbar-toggler"
 				type="button"
 				data-toggle="collapse"
@@ -36,7 +37,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Home</a>
+						<a class="nav-link" href="../../index.html">Home</a>
 					</li>
 					<li class="nav-item active">
 						<a class="nav-link" href="./about.html">Sobre</a>
@@ -61,18 +62,26 @@
 		</nav>
 	</header>
 
-	<main>
-		<div class="container pt-3">
+	<main class="about-margin-footer">
+		<div class="container">
 			<section>
-				<h2 class="roboto-bold">Quem somos ?</h2>
-				<div class="row">
-					<div class="col roboto-regular">
-						<p>O Lero Lero nasceu com o intuito de ajudar jovens a se inserirem no mercado profissional da computação.</p>
-						<p>Contando com um conjunto de profissionais da área que sabem de todas as dificuldades que o jovem atuante passa e de todas as defasagens que os cursos habituais possuem, nossas aulas têm propostas dinâmicas e correspondentes com a realidade, aqui você aprende fazendo com os melhores programadores das melhores áreas.  </p>
-			
+				<div class="row pt-3">
+					<div class="col-12 col-md-6  pb-2 roboto-regular text-justify">
+						<h2 class="roboto-bold">Quem somos ?</h2>
+						<p class="pt-2">
+							O Lero Lero nasceu com o intuito de ajudar jovens a se inserirem
+							no mercado profissional da computação.
+						</p>
+						<p>
+							Contando com um conjunto de profissionais da área que sabem de
+							todas as dificuldades que o jovem atuante passa e de todas as
+							defasagens que os cursos habituais possuem, nossas aulas têm
+							propostas dinâmicas e correspondentes com a realidade, aqui você
+							aprende fazendo com os melhores programadores das melhores áreas.
+						</p>
 					</div>
-					<div class="col">
-						<img src="../assets/logo/lerolero.PNG">
+					<div class="col-12 col-md-6 my-auto">
+						<img class="logo w-100" src="../assets/logo/lerolero.png">
 					</div>
 				</div>
 			</section>
@@ -81,7 +90,9 @@
 
 	<footer class="footer bg-dark pt-3 m-0 mt-3">
 		<h5>Lero Lero</h5>
-		<p class="m-0 pb-3">Vamos te ensinar a programar um site assim</p>
+		<p class="m-0 pb-3 p-1">
+			O melhor curso já implementado!
+		</p>
 	</footer>
 	
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -1,0 +1,40 @@
+.signup-margin-footer {
+	margin-bottom: 80px;
+}
+
+
+@media (max-width: 320px) {
+  .signup-margin-footer {
+		margin-bottom: 0px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .signup-margin-footer {
+		margin-bottom: 0px;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .signup-margin-footer {
+		margin-bottom: 120px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .signup-margin-footer {
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .signup-margin-footer {
+		margin-bottom: 180px;
+	}
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .signup-margin-footer {
+		margin-bottom: 900px;
+	}
+}

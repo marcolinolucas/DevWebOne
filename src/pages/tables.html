@@ -5,21 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="src/images/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/logo/favicon.ico">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="src/css/main.css">
+	<link rel="stylesheet" href="../css/main.css">
 
 	<title>Cursos Lero Lero</title>
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="../index.html">Lero Lero</a>
+			<a class="navbar-brand" href="../../index.html">Lero Lero</a>
 			<button class="navbar-toggler"
 				type="button"
 				data-toggle="collapse"
@@ -33,7 +36,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Home</a>
+						<a class="nav-link" href="../../index.html">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./about.html">Sobre</a>
@@ -58,9 +61,426 @@
 		</nav>
 	</header>
 
+	<main>
+		<div class="container">
+			<form class="needs-validation border p-3 mt-4" novalidate>
+				<h1 class="text-center pb-4">Cursos</h1>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="courseInputName">Nome</label>
+						<input type="text" class="form-control" id="courseInputName"
+							placeholder="Curso de JavaScript" required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="courseInputAddress">Requisito</label>
+						<input type="text" class="form-control" id="courseInputAddress"
+							placeholder="Prog I">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um requisito válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="courseInputMenu">Ementa</label>
+						<input type="text" class="form-control" id="courseInputMenu"
+							placeholder="JavaScript, NodeJS, ...">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe uma ementa válida.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="courseInputHours">Carga Horária</label>
+						<input type="number" class="form-control" id="courseInputHours"
+							placeholder="30 horas" min="1" max="99999">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe uma carga horária válida.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="courseInputPrice">Preço</label>
+						<input type="number" class="form-control" id="courseInputPrice"
+							placeholder="R$ 199.99" step="0.50" min="0">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um preço válido.
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Adicionar</button>
+			</form>
+			<form class="needs-validation border p-3 mt-4" novalidate>
+				<h1 class="text-center pb-4">Instrutores</h1>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="instructorsInputName">Nome</label>
+						<input type="text" class="form-control" id="instructorsInputName"
+							placeholder="Curso de JavaScript..." required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="instructorsInputEmail">Email</label>
+						<input type="email" class="form-control" id="instructorsInputEmail"
+							placeholder="professor@js.com.br" required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="instructorsInputSalary">Valor Hora</label>
+						<input type="number" class="form-control" id="instructorsInputSalary"
+						placeholder="R$ 49.99" step="1" min="0" max="9999999999">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um valor válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="instructorsInputLogin">Login</label>
+						<input type="text" class="form-control" id="instructorsInputLogin"
+							placeholder="Trakston" required
+							pattern=".{3,20}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="instructorsInputPassword">Senha</label>
+						<input type="text" class="form-control" id="instructorsInputPassword"
+							placeholder="B@t@tinha123" required
+							pattern=".{3,255}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Adicionar</button>
+			</form>
+			<form class="needs-validation border p-3 mt-4" novalidate>
+				<h1 class="text-center pb-4">Matrículas</h1>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="registerClassInputID">ID da Turma</label>
+						<input type="number" class="form-control" id="registerClassInputID"
+							placeholder="123..." required 
+							min="1000000000" max="9999999999">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um ID válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="registerStudentInputID">ID do Aluno</label>
+						<input type="number" class="form-control" id="registerStudentInputID"
+							placeholder="123..." required 
+							min="10000000000" max="99999999999">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um ID válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="registerInputDate">Data Matrícula</label>
+						<input type="date" class="form-control" id="registerInputDate">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe uma data válida.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="registerInputGrade">Nota</label>
+						<input type="number" class="form-control" id="registerInputGrade"
+							placeholder="10" min="0" step="0.5" max="10">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe uma nota válida.
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Adicionar</button>
+			</form>
+			<form class="needs-validation border p-3 mt-4" novalidate>
+				<h1 class="text-center pb-4">Turmas</h1>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="classInstructorInputID">ID do Instrutor</label>
+						<input type="number" class="form-control" id="classInstructorInputID"
+							placeholder="123..." required 
+							min="10000000000" max="99999999999">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um ID válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="classCourseInputID">ID do Curso</label>
+						<input type="number" class="form-control" id="classCourseInputID"
+							placeholder="123..." required 
+							min="1000000000" max="9999999999">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um ID válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="classStartInputDate">Data Início</label>
+						<input type="date" class="form-control" id="classStartInputDate">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe uma data válida.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="classEndInputDate">Data Final</label>
+						<input type="date" class="form-control" id="classEndInputDate">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe uma data válida.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="classInputHours">Carga Horária</label>
+						<input type="number" class="form-control" id="classInputHours"
+							placeholder="65 horas" min="1" max="99999">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe uma carga horária válida.
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Adicionar</button>
+			</form>
+			<form class="needs-validation border p-3 mt-4" novalidate>
+				<h1 class="text-center pb-4">Administrador</h1>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="adminInputName">Nome</label>
+						<input type="text" class="form-control" id="adminInputName"
+							placeholder="adminMaster" required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="adminInputLogin">Login</label>
+						<input type="text" class="form-control" id="adminInputLogin"
+							placeholder="admin" required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="adminInputPassword">Senha</label>
+						<input type="text" class="form-control" id="adminInputPassword"
+							placeholder="admin123" required
+							pattern=".{3,255}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Adicionar</button>
+			</form>
+			<form class="needs-validation border p-3 mt-4" novalidate>
+				<h1 class="text-center pb-4">Alunos</h1>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="studentInputCPF">CPF</label>
+						<input type="text" class="form-control" id="studentInputCPF"
+							placeholder="000.000.000-00" required
+							pattern=".{14}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputName">Nome</label>
+						<input type="text" class="form-control" id="studentInputName"
+							placeholder="fulano" required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputEmail">Email</label>
+						<input type="email" class="form-control" id="studentInputEmail"
+							placeholder="fulano@gmail.com.br" required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputPhone">Telefone</label>
+						<input type="text" class="form-control" id="studentInputPhone"
+							placeholder="+5521900000000" required
+							pattern=".{14}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputLogin">Login</label>
+						<input type="text" class="form-control" id="studentInputLogin"
+							placeholder="fulaninho" required
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputPassword">Senha</label>
+						<input type="text" class="form-control" id="studentInputPassword"
+							placeholder="Fulaninho123" required
+							pattern=".{3,255}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputAddress">Endereço</label>
+						<input type="text" class="form-control" id="studentInputAddress"
+							placeholder="Trav. Alguma, Nº X"
+							pattern=".{3,50}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputCity">Cidade</label>
+						<input type="text" class="form-control" id="studentInputCity"
+							placeholder="Niterói"
+							pattern=".{3,30}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputDistrict">Bairro</label>
+						<input type="text" class="form-control" id="studentInputDistrict"
+							placeholder="Ingá"
+							pattern=".{3,30}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="studentInputCEP">CEP</label>
+						<input type="text" class="form-control" id="studentInputCEP"
+							placeholder="00000-000"
+							pattern=".{9}">
+						<div class="valid-feedback">
+							Muito bem!
+						</div>
+						<div class="invalid-feedback">
+							Informe um nome válido.
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Adicionar</button>
+			</form>
+		</div>
+	</main>
+
+	<footer class="footer bg-dark pt-3 m-0 mt-3">
+		<h5>Lero Lero</h5>
+		<p class="m-0 pb-3">Muitas tabelas!</p>
+	</footer>
 	
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="../js/invalidForm.js"></script>
 </body>
 </html>

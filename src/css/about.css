@@ -1,0 +1,27 @@
+.about-margin-footer {
+	margin-bottom: 215px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .about-margin-footer {
+		margin-bottom: 0px;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .about-margin-footer {
+		margin-bottom: 70px;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 2560px) {
+  .about-margin-footer {
+		margin-bottom: 350px;
+	}
+}
+
+@media (min-width: 2560px) {
+  .about-margin-footer {
+		margin-bottom: 1000px;
+	}
+}
